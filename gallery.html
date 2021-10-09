@@ -94,12 +94,23 @@ gallery/img {
 .demo:hover {
   opacity: 1;
 }
+
+.lock-save {
+			position: absolute; 
+			top: 0px; 
+			left: 0px; 
+			right: 0px; 
+			bottom: 0px; 
+			opacity: 0.0;
+			-ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+			filter: alpha(opacity=0);
+		}
 </style>
 <script>
 document.addEventListener('contextmenu', event => event.preventDefault());
 </script>
 </head>
-<body oncontextmenu="return false;">
+<body oncontextmenu="return false;"  onload="init()">
 
 <div class="divTable">
 	<div class="divTableBody">
@@ -119,6 +130,7 @@ document.addEventListener('contextmenu', event => event.preventDefault());
 				<div class="gallery" style="width:900px;float:right;">
 					<p style="line-height:20px;">&nbsp </p>
 						<div class="container">
+						<div class="lock-save">
   <div class="mySlides">
     <div class="numbertext">1 / 12</div>
     <img src="gallery/img1.jpg" style="width:100%">
@@ -174,7 +186,7 @@ document.addEventListener('contextmenu', event => event.preventDefault());
     <div class="numbertext">12 / 12</div>
     <img src="gallery/img12.jpg" style="width:100%">
   </div>
- 
+ </div>
  
  
  
@@ -264,6 +276,19 @@ function showSlides(n) {
   slides[slideIndex-1].style.display = "block";
   dots[slideIndex-1].className += " active";
 }
+
+		function init(){
+			blockContextMenu();
+		}
+		
+		//It's not necessary, but don't show others options from context menu 
+		function blockContextMenu(){
+			document.addEventListener("contextmenu", function(e) { 
+				e.preventDefault();
+				return false;
+			}, false);
+		}
+	
 </script>
 </body>
 </html>

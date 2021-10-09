@@ -130,3 +130,7 @@ ul li a:hover {
 .gallery {
   width: 800px;
 }
+
+img {
+    -webkit-touch-callout: none;
+}
