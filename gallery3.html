@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>GALLERY</title>
+  <link rel="stylesheet" href="./style.css">
+  <style>
+
+* {
+  box-sizing: border-box;
+}
+
+gallery/img {
+  vertical-align: middle;
+}
+
+.container {
+  position: relative;
+}
+.mySlides {
+  display: none;
+}
+.cursor {
+  cursor: pointer;
+}
+
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 40%;
+  width: auto;
+  padding: 16px;
+  margin-top: -50px;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+
+.prev {
+  cursor: pointer;
+  position: absolute;
+  top: 40%;
+  left: 0%;
+  width: auto;
+  padding: 16px;
+  margin-top: -50px;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+
+.column {
+  float: left;
+  width: 16.66%;
+}
+
+
+.demo {
+  opacity: 0.6;
+}
+
+.active,
+.demo:hover {
+  opacity: 1;
+}
+</style>
+</head>
+<body>
+
+<div class="divTable">
+	<div class="divTableBody">
+		<div class="divTableRow">
+			<div class="divTableCell1">
+				<ul>
+				  <li><p style="line-height:100px;">&nbsp </p></li>
+				  <li><a href="index.html">ABOUT</a></li>
+				  <li><a href="gallery.html">GALLERY</a></li>
+				  <li><a href="contact.html">CONTACT</a></li>
+				</ul>
+			</div>
+			<div class="divTableCell2">
+				<div class="title">
+					GALLERY
+				</div>
+				<div class="content">
+					<p style="line-height:20px;">&nbsp </p>
+						<div class="container">
+  <div class="mySlides">
+    <div class="numbertext">1 / 12</div>
+    <img src="gallery/img1.jpg">
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">2 / 12</div>
+    <img src="gallery/img2.jpg">
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">3 / 12</div>
+    <img src="gallery/img3.jpg">
+  </div>
+    
+  <div class="mySlides">
+    <div class="numbertext">4 / 12</div>
+    <img src="gallery/img4.jpg">
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">5 / 12</div>
+    <img src="gallery/img5.jpg">
+  </div>
+    
+  <div class="mySlides">
+    <div class="numbertext">6 / 12</div>
+    <img src="gallery/img6.jpg">
+  </div>
+  
+      
+  <div class="mySlides">
+    <div class="numbertext">7 / 12</div>
+    <img src="gallery/img7.jpg">
+  </div>
+   <div class="mySlides">
+    <div class="numbertext">8 / 12</div>
+    <img src="gallery/img8.jpg">
+  </div>
+    <div class="mySlides">
+    <div class="numbertext">9 / 12</div>
+    <img src="gallery/img9.jpg">
+  </div>
+    <div class="mySlides">
+    <div class="numbertext">10 / 12</div>
+    <img src="gallery/img10.jpg">
+  </div>
+    <div class="mySlides">
+    <div class="numbertext">11 / 12</div>
+    <img src="gallery/img11.jpg">
+  </div>
+    <div class="mySlides">
+    <div class="numbertext">12 / 12</div>
+    <img src="gallery/img12.jpg">
+  </div>
+ 
+ 
+ 
+ 
+ 
+  <a class="prev" onclick="plusSlides(-1)">❮</a>
+  <a class="next" onclick="plusSlides(1)">❯</a>
+
+  <div class="caption-container">
+    <p id="caption"></p>
+  </div>
+
+  <div class="row">
+    <div class="column">
+      <img class="demo cursor" src="gallery/img1_thumb.jpg" onclick="currentSlide(1)" alt="Image01">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="gallery/img2_thumb.jpg" onclick="currentSlide(2)" alt="Image02">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="gallery/img3_thumb.jpg" onclick="currentSlide(3)" alt="Image03">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="gallery/img4_thumb.jpg" onclick="currentSlide(4)" alt="Image04">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="gallery/img5_thumb.jpg" onclick="currentSlide(5)" alt="Image05">
+    </div>    
+    <div class="column">
+      <img class="demo cursor" src="gallery/img6_thumb.jpg" onclick="currentSlide(6)" alt="Image06">
+    </div>
+        <div class="column">
+      <img class="demo cursor" src="gallery/img7_thumb.jpg" onclick="currentSlide(7)" alt="Image07">
+          </div>
+       <div class="column">
+            <img class="demo cursor" src="gallery/img8_thumb.jpg" onclick="currentSlide(8)" alt="Image08">
+                </div>
+        <div class="column">
+			<img class="demo cursor" src="gallery/img9_thumb.jpg" onclick="currentSlide(9)" alt="Image09">
+                </div>
+        <div class="column">
+             <img class="demo cursor" src="gallery/img10_thumb.jpg" onclick="currentSlide(10)" alt="Image10">
+                 </div>
+        <div class="column">
+			<img class="demo cursor" src="gallery/img11_thumb.jpg" onclick="currentSlide(11)" alt="Image11">
+                </div>
+        <div class="column">
+			<img class="demo cursor" src="gallery/img12_thumb.jpg" onclick="currentSlide(12)" alt="Image12">
+                </div>
+    </div>
+  </div>
+  
+</div>
+					</div>
+			</div>
+		</div>
+	</div>
+</div>
+<div class="copyright">
+	COPYRIGHT © 2021 MICHAEL NEDELKO. ALL RIGHTS RESERVED.
+</div>
+
+<script>
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("demo");
+  var captionText = document.getElementById("caption");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+}
+</script>
+</body>
+</html>

@@ -1,0 +1,132 @@
+@import url("https://fonts.googleapis.com/css?family=Raleway:400,400i,700");
+body {
+  display: flex;
+  height: 100vh;
+  justify-content: left;
+  align-items: left;
+  text-align: left;
+  background: #272727;
+  background-image: url("bg.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  -webkit-user-select: none;  /* Chrome all / Safari all */
+  -moz-user-select: none;     /* Firefox all */
+  -ms-user-select: none;      /* IE 10+ */
+  -o-user-select: none;
+  user-select: none;
+}
+
+ul {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  list-style-type: none;
+}
+ul li {
+  padding: 6px 0;
+}
+ul li a {
+  --fill-color: #f3d42a;
+  position: relative;
+  display: block;
+  padding: 4px 0;
+  font: 700 3rem Raleway, sans-serif;
+  text-decoration: none;
+  text-transform: uppercase;
+  -webkit-text-stroke: 2px var(--fill-color);
+  background: linear-gradient(var(--fill-color) 0 100%) left/0 no-repeat;
+  color: transparent;
+  -webkit-background-clip: text;
+          background-clip: text;
+  transition: 0.3s linear;
+}
+ul li a:hover {
+  background-size: 100%;
+}
+
+
+
+.divTable{
+	display: table;
+	width: 1600px;
+	justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin: 0 auto;
+}
+.divTableRow {
+	display: table-row;
+}
+.divTableHeading {
+	display: table-header-group;
+}
+.divTableCell1, .divTableCell2, .divTableHead {
+	border: 0px;
+	display: table-cell;
+	padding: 3px 10px;
+}
+.divTableCell1 {
+	width: 20%;
+}
+.divTableCell2 {
+	width: 80%;
+}
+.divTableHeading {
+	background-color: #EEE;
+	display: table-header-group;
+	font-weight: bold;
+}
+.divTableFoot {
+	background-color: #EEE;
+	display: table-footer-group;
+	font-weight: bold;
+}
+.divTableBody {
+	display: table-row-group;
+}
+
+.title {
+  font: 700 3rem Raleway, sans-serif;
+  color: #ffd800;
+  text-align: right;
+}
+.content {
+  font: 300 1.25rem Raleway, sans-serif;
+  color: #b6b6b6;
+  text-align: right;
+}
+.content a {
+  --fill-color: #f3d42a;
+  padding: 4px 0;
+  font: 100 1.5rem Raleway, sans-serif;
+  text-decoration: none;
+  text-transform: uppercase;
+  -webkit-text-stroke: 1px var(--fill-color);
+  background: linear-gradient(var(--fill-color) 0 100%) left/0 no-repeat;
+  color: transparent;
+  -webkit-background-clip: text;
+          background-clip: text;
+  transition: 0.3s linear;
+}
+.content b {
+  font: 1000 1.5rem Raleway, sans-serif;
+  color: #b6b6b6;
+  text-align: right;
+}
+.content a:hover {
+  background-size: 100%;
+}
+
+.copyright {
+  font: 300 0.5rem Raleway, sans-serif;
+  color: #b6b6b6;
+  text-align: center;
+  position: absolute;
+  bottom: 0;
+  left: 50px;
+}
+
+
+.gallery {
+  width: 800px;
+}
